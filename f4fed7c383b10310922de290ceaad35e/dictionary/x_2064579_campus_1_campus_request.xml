@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b66333cb83350310922de290ceaad3d7" extends="task" label="Campus Request" max_length="40" name="x_2064579_campus_1_campus_request" type="collection">
+        <element choice="1" label="Request Type" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Hostel" sequence="2" value="hostel"/>
+                <element inactive_on_update="false" label="IT Services" sequence="0" value="it_services"/>
+            </choice>
+        </element>
+    </element>
+</database>

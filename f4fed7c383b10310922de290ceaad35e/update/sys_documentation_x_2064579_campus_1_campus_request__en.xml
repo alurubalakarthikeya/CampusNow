@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Campus Request" language="en" table="x_2064579_campus_1_campus_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Campus Request</label>
+            <language>en</language>
+            <name>x_2064579_campus_1_campus_request</name>
+            <plural>Campus Requests</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-05 14:27:28</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Campus Request</sys_name>
+            <sys_package display_value="CampusNow" source="x_2064579_campus_1">f4fed7c383b10310922de290ceaad35e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CampusNow">f4fed7c383b10310922de290ceaad35e</sys_scope>
+            <sys_update_name>sys_documentation_x_2064579_campus_1_campus_request__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-05 14:27:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
