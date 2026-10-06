@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "CampusNow",
+    "slug": "campusnow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "campusnow",
+    "userInterfaceStyle": "light",
+    "web": {
+      "output": "single"
+    },
+    "backgroundColor": "#FFFFFF",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "CampusNow uses the camera to scan campus QR codes and attach photos to reports.",
+        "NSLocationWhenInUseUsageDescription": "CampusNow uses your location to suggest the nearest campus building for a report.",
+        "NSPhotoLibraryUsageDescription": "CampusNow attaches photos from your library as evidence on a report."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/images/logo.png",
+          "imageWidth": 160
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CampusNow uses the camera to scan campus QR codes and attach photos to reports."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "CampusNow uses your location to suggest the nearest campus building for a report."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CampusNow attaches photos from your library as evidence on a report."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
