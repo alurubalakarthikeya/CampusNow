@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
     "scheme": "campusnow",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "web": {
       "output": "single"
     },
@@ -21,6 +21,7 @@
       }
     },
     "android": {
+      "package": "com.carty.campusnow",
       "adaptiveIcon": {
         "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -28,8 +29,17 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
     },
+
     "plugins": [
       "expo-router",
       [
@@ -37,9 +47,14 @@
         {
           "backgroundColor": "#FFFFFF",
           "image": "./assets/images/logo.png",
-          "imageWidth": 160
+          "imageWidth": 160,
+          "dark": {
+            "backgroundColor": "#08090A",
+            "image": "./assets/images/logo.png"
+          }
         }
       ],
+      "expo-notifications",
       [
         "expo-camera",
         {
@@ -61,6 +76,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "220f881c-6037-4501-b4db-4d52ba0b74e0"
+      }
     }
   }
 }
