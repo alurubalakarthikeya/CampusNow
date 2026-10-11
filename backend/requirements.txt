@@ -1,0 +1,17 @@
+# CampusNow backend — FastAPI foundation for the campus operations API.
+# ServiceNow is not a dependency yet: the integration boundary is a local
+# adapter until the campus instance and its credentials exist.
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+SQLAlchemy==2.0.36
+
+# Authentication: bearer tokens are verified against the campus identity
+# provider's JWKS. Nothing in this file contains a credential.
+pyjwt[crypto]==2.10.1
+
+# Tests
+pytest==8.3.4
+httpx==0.28.1
